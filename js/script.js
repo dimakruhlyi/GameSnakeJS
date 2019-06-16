@@ -1,6 +1,6 @@
 window.onload = function() {
     document.addEventListener('keydown', changeDirection);
-    setInterval(loop, 1000/60); // 60 FPS
+    setInterval(loop, 1000/100); // 60 FPS
 }
 
 var
@@ -15,7 +15,7 @@ var
     aw = ah				= 20, // apple size
     apples				= [], // apples list
     trail				= [], // tail elements list (aka trail)
-    tail 				= 100, // tail size (1 for 10)
+    tail 				= 10, // tail size (1 for 10)
     tailSafeZone		= 20, // self eating protection for head zone (aka safeZone)
     cooldown			= false, // is key in cooldown mode
     score				= 0; // current score
