@@ -1,6 +1,6 @@
 window.onload = function() {
     document.addEventListener('keydown', changeDirection);
-    setInterval(loop, 1000/100); // 60 FPS
+    setInterval(loop, 1000/100); // 100 FPS
 }
 
 var
